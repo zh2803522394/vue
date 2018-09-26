@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container" :style="constyle">
+            <h1>{{title}}</h1>
+            <div><input :placeholder="iptvalue" type="text" v-model="num" :style="iptstyle" @focus="fun1" @blur="fun2">
+            <a href="#" :style="astyle" @click="fun4">{{TJ}}</a></div>
+            <ul :style="ulstyle">
+                <li v-for="(arr,index) in arrs" :style="listyle">{{arr.name}} <a href="#" @click="fun3(index)" :style="as2">{{arr.txt}}</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="script.js"></script>
+</html>
